@@ -1,0 +1,72 @@
+        body {
+            font-family: "Playpen Sans", cursive;
+            background-color: #f8ede3;
+            margin: 0;
+            padding: 0;
+        }
+
+        .promo-section {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .playpen-sans-unique {
+            font-family: "Playpen Sans", cursive;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            /* Replace with desired weight */
+            font-style: normal;
+        }
+
+        .promo-content {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            /* Align text to the left */
+            text-align: right;
+            color: white;
+            z-index: 2;
+            /* Ensure text is above overlay */
+        }
+
+        .promo-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #7B5038B7;
+            /* Brown color with 50% opacity */
+            z-index: 1;
+            /* Ensure overlay is below text */
+        }
+
+        .promo-content h1 {
+            font-size: 50px;
+            margin-bottom: 1rem;
+            margin-right: 139px;
+            font-weight: bold;
+        }
+
+        .promo-content p {
+            font-size: 16px;
+            margin-right: 139px;
+            margin-bottom: 2rem;
+        }
+
+        /* Media queries for small screens */
+        @media screen and (max-width: 768px) {
+            .promo-content h1 {
+                font-size: 30px; /* Reduce font size for smaller screens */
+                margin-right: 45px; /* Adjust right margin for smaller screens */
+            }
+
+            .promo-content p {
+                font-size: 12px; /* Reduce font size for smaller screens */
+                margin-right: 45px; /* Adjust right margin for smaller screens */
+            }
+        }

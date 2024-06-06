@@ -1,0 +1,85 @@
+body {
+    font-family: "Playpen Sans", cursive;
+    background-color: #f8ede3;
+    margin: 0;
+    padding: 0;
+}
+
+.playpen-sans-unique {
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Replace with desired weight */
+    font-style: normal;
+}
+.about-section {
+    padding-top: 90px; /* Adjust the top padding as needed */
+    background-color: #f8f9fa;
+}
+
+.about-section .container {
+    max-width: 1200px;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    color: #7B5038;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.load-more-btn {
+    background-color: #7B5038;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.load-more-btn:hover {
+    background-color: darkbrown;
+}
+
+@media (max-width: 992px) {
+    .about-section .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .about-section .row {
+        flex-direction: column-reverse;
+    }
+    .about-section .col-md-6,
+    .about-section .col-lg-5 {
+        flex: 1;
+        width: 100%;
+    }
+    .load-more-btn {
+        margin-bottom: 20px; /* Add space between button and image */
+    }
+
+}
+@media (min-width: 992px) {
+    .about-section img {
+        margin-left: 139px; /* Left margin for large screens */
+    }
+    .about-section h2,
+    .about-section p,
+    .load-more-btn {
+        margin-left: 139px; /* Left margin for large screens */
+        margin-right: 139px; /* Right margin for large screens */
+    }
+}

@@ -1,0 +1,83 @@
+body {
+    font-family: "Playpen Sans", cursive;
+    background-color: #f8ede3;
+    color: #5c4033;
+    margin: 0;
+    padding: 0;
+}
+
+.playpen-sans-unique {
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.topic-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.topic-paragraph {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.product-card {
+    text-align: center;
+    padding: 10px;
+}
+
+.product-img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.product-name {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.more-products {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.more-products button {
+    background-color: #5c4033;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.more-products button:hover {
+    background-color: #3e2a23;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -8,9 +8,9 @@ body {
     color: #fff;
     padding: 3rem 1rem;
 }
-.footer-logo img {
-    width: 150px;
-    margin-bottom: 1rem;
+.footer-logo-col img {
+    width: 200px;
+    margin-bottom: 2rem;
 }
 .footer p {
     color: #fff;
